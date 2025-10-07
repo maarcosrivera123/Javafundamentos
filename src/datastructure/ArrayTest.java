@@ -8,15 +8,13 @@ public class ArrayTest {
 		// == operador de establecer un valor a una variable
 		System.out.println(1 == 1);
 		int[] scores = { 12, 123569, 435 };
-		int sum = scores [0] + scores [1] + scores [2] + scores [3] ;
-		System.out.println("el total de escore es" + sum);
-		int scoretotal = 0;
-		for (int i = 0; i < scores.length; i++) {
-			scoretotal = scores [i] + scoretotal;
-			
-			
-		}
-		System.out.println("el total de escore es "+ scoretotal);
+
+		sumup(scores);
+		sumup(scores);
+		sumup(scores);
+
+		findMaxMin(scores);
+
 		User[] clients = new User[20000]; // tiene una capaciadad de 20 mil usuarios de guardar 20 mil usuarios
 		System.out.println(scores.length); // == el .length recorre cuantos numeros hya
 
@@ -45,5 +43,38 @@ public class ArrayTest {
 
 		System.out.println(Users[2]);
 
+	}
+
+	/**
+	 * @param scores
+	 */
+	private static void findMaxMin(int[] scores) {
+		// el maximo valor
+		int max;
+		// el minimo
+		int min;
+		for (int i = 0; i < scores.length; i++) {
+			//si "max" es menor que el dato actual 
+			//que hemos cogido scores [i]
+			// max = scores [i]
+			
+				
+			}
+
+		}
+
+	/**
+	 * @param scores
+	 * 
+	 */
+	private static void sumup(int[] scores) {
+		int sum = scores[0] + scores[1] + scores[2] + scores[3];
+		System.out.println("el total de escore es" + sum);
+		int scoretotal = 0;
+		for (int i = 0; i < scores.length; i++) {
+			scoretotal = scores[i] + scoretotal;
+
+		}
+		System.out.println("el total de escore es " + scoretotal);
 	}
 }

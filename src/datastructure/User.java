@@ -17,7 +17,7 @@ public class User {
 
 	public User() {
 		// TODO Auto-generated constructor stub
-	
+
 	}
 
 	public String getName() {
@@ -75,18 +75,31 @@ public class User {
 	public void setPlaza(String plaza) {
 		this.plaza = plaza;
 	}
-	
-	public User (String name , int age, String sex, String password, String email, long id, String plaza) {
-	this.name = name;
-	this.age = age;
-	this.sex = sex;
-	this.password = password;
-	this.email = email;
-	this.id = id;
-	this.plaza = plaza;
-	
+
+	public User(String name, int age, String sex, String password, String email, long id, String plaza) {
+		this.name = name;
+		this.age = age;
+		this.sex = sex;
+		this.password = password;
+		this.email = email;
+		this.id = id;
+		this.plaza = plaza;
+
 	}
-	
+
+	/**
+	 * @param string
+	 * @param i
+	 * @param string2
+	 * @param i2
+	 * @param b
+	 */
+	public User(String name, int id, String password, int age) {
+		this.name = name;
+		this.id = id;
+		this.password = password;
+		this.age = age;
+
+	}
+
 }
-	
- 
